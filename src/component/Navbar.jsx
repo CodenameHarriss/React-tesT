@@ -23,10 +23,19 @@ function Navbar() {
                             </a>
                             <ul className="dropdown-menu">
                                 <li><Link className="dropdown-item" to={"/ListData"}>List Data</Link></li>
-                                {/* <li><a className="dropdown-item" href="#">Another action</a></li>
-                                <li><hr className="dropdown-divider" /></li>
-                                <li><a className="dropdown-item" href="#">Something else here</a></li> */}
                             </ul>
+                        </li>
+                        <li className='nav-item dropdown'>
+                            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                User
+                            </a>
+                            <ul className='dropdown-menu'>
+                                <li><Link className='dropdown-item' to={"/HomeUser"}>User</Link></li>
+                                <li><Link className="dropdown-item" to={"/Follow"}>Follow</Link></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><Link className="dropdown-item" to={"/ProfileUser"}>Profile</Link></li>
+                            </ul>
+
                         </li>
                     </ul>
                     <form className="d-flex" role="search">

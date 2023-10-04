@@ -5,7 +5,7 @@ function Home() {
         <div className='container'>
             <div className='row'>
                 <div className='text-center'>
-                    <h1>WELCOME HOME</h1>
+                    <h1 className='fw-bold'>WELCOME HOME</h1>
                 </div>
             </div>
         </div>

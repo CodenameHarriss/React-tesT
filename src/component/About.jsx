@@ -5,7 +5,7 @@ function About() {
     <div className='container'>
     <div className='row'>
         <div className='text-center'>
-            <h1>ABOUT ME</h1>
+            <h1 className='fw-bold'>ABOUT ME</h1>
         </div>
     </div>
 </div>
