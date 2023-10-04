@@ -75,7 +75,7 @@ function Adddata() {
                             <label>password</label>
                         </div>
                     </div>
-                    <div className='text-center'>
+                    <div className='float-start'>
                         <button className='btn btn-success me-2'>บันทึกข้อมูล</button>
                         <Link className='btn btn-danger' to={"/ListData"}>ย้อนกลับ</Link>
                     </div>

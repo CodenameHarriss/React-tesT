@@ -89,8 +89,8 @@ function UpdateData() {
                             <label>password</label>
                         </div>
                     </div>
-                    <div className='text-center'>
-                        <button className='btn btn-success me-2'>แก้ไขข้อมูล</button>
+                    <div className='float-start'>
+                        <button className='btn btn-warning text-white me-2'>แก้ไขข้อมูล</button>
                         <Link className='btn btn-danger' to={"/ListData"}>ย้อนกลับ</Link>
                     </div>
                 </div>
