@@ -18,7 +18,7 @@ function Adddata() {
         e.preventDefault();
 
         if (!newUser.fullname || !newUser.phone || !newUser.address || !newUser.email || !newUser.password) {
-            alert("กรุณากรอกข้อมูลที่จะแก้ไขให้ครบถ้วน");
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
             return;
         }
         const data = {
