@@ -37,16 +37,21 @@ function UpdateData() {
             return;
         }
 
-        axios.put(`http://localhost:3001/user/update/${id}`, upUser)
-            .then((res) => {
-                console.log(res);
-                alert("แก้ไขข้อมูลเรียบร้อย")
-                navigate("/ListData")
-            })
-            .catch((error) => {
-                console.error(error);
-                alert("เกิดข้อผิดพลาดในการแก้ไขข้อมูล!!")
-            })
+        const confirmupdate = window.confirm("คุณแน่ใจหรือไม่ที่จะแก้ไขข้อมูลนี้?")
+
+        if (confirmupdate) {
+
+            axios.put(`http://localhost:3001/user/update/${id}`, upUser)
+                .then((res) => {
+                    console.log(res);
+                    alert("แก้ไขข้อมูลเรียบร้อย")
+                    navigate("/ListData")
+                })
+                .catch((error) => {
+                    console.error(error);
+                    alert("เกิดข้อผิดพลาดในการแก้ไขข้อมูล!!")
+                })
+        }
     }
 
     return (

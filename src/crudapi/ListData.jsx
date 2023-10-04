@@ -15,12 +15,21 @@ function ListData() {
             })
     }, [])
 
-    // const handleDelete = (id) => {
-    //     axios.delete(`http://localhost:3001/user/delete/${id}`)
-    //     .then((res) => {
+    const handleDelete = (id) => {
 
-    //     })
-    // }
+        const confirmdelete = window.confirm("คุณแน่ใจหรือไม่ที่จะลบข้อมูลนี้?");
+
+        if (confirmdelete) {
+
+            axios.delete(`http://localhost:3001/user/delete/${id}`)
+                .then((res) => {
+                    console.log(res)
+                    alert("ลบข้อมูลสำเร็จ")
+                    window.location.reload();
+                })
+                .catch((err) => console.log(err))
+        }
+    }
 
     return (
         <div className='container'>
