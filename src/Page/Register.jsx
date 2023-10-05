@@ -6,7 +6,7 @@ function Register() {
         <div className="container">
             <div className="row">
                 <main className="w-100 m-auto d-flex justify-content-center">
-                    <form>  
+                    <form>
                         <div className="text-center mt-2">
                             <img src="https://images.unsplash.com/photo-1594323713852-9626155bfd37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHdlbGNvbWUlMjBzaWdufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60" className="rounded" width={150} alt="img" />
                         </div>
