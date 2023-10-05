@@ -7,7 +7,7 @@ function ListData() {
     const [user, setUser] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3001/user/read')
+        axios.get(`http://localhost:3001/user/read`)  //http://localhost:3001/user/read (localhost)
             .then((res) => {
                 setUser(res.data)
             }).catch((error) => {
@@ -51,18 +51,24 @@ function ListData() {
                             </tr>
                         </thead>
                         <tbody>
-                            {user.map(users => (
-                                <tr key={users.id}>
-                                    <td>{users.id}</td>
-                                    <td>{users.fullname}</td>
-                                    <td>{users.phone}</td>
-                                    <td>{users.address}</td>
-                                    <td>
-                                        <Link to={`/UpdateData/${users.id}`} className='btn btn-warning me-2 btn-sm mt-1'>แก้ไข</Link>
-                                        <button type='button' onClick={() => handleDelete(users.id)} className='btn btn-danger me-2 btn-sm mt-1'>ลบ</button>
-                                    </td>
+                            {Array.isArray(user) && user.length > 0 ? (
+                                user.map(users => (
+                                    <tr key={users.id}>
+                                        <td>{users.id}</td>
+                                        <td>{users.fullname}</td>
+                                        <td>{users.phone}</td>
+                                        <td>{users.address}</td>
+                                        <td>
+                                            <Link to={`/UpdateData/${users.id}`} className='btn btn-warning me-2 btn-sm mt-1'>แก้ไข</Link>
+                                            <button type='button' onClick={() => handleDelete(users.id)} className='btn btn-danger me-2 btn-sm mt-1'>ลบ</button>
+                                        </td>
+                                    </tr>
+                                ))
+                            ) : (
+                                <tr>
+                                    <td colSpan="5" className='text-center'>ไม่มีข้อมูลผู้ใช้</td>
                                 </tr>
-                            ))}
+                            )}
                         </tbody>
                     </table>
                 </div>
