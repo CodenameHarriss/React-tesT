@@ -31,21 +31,17 @@ function Follow() {
         <>
             <div className='container'>
                 <div className='card shadow border border-0 mt-3'>
-                    <div className='card-header bg-primary text-white fw-bold'>ติดตามสถานะ</div>
+                    <div className='card-header bg-warning text-white fw-bold'>ติดตามสถานะ</div>
                     <div className='card-body'>
                         {follow.map((follows) => (
                             <div key={follows.sale_id}>
-                                <label className='fw-bold'>ชื่อ - นามสกุล : <strong>{follows.fullname}</strong></label><br />
-                                <label className='fw-bold'>หมายเลขโทรศัพท์ : <strong>{follows.phone}</strong></label><br />
-                                <label className='fw-bold'>ที่อยู่ : <strong>{follows.address}</strong></label><br />
+                                <label className='fw-bold'>ชื่อ - นามสกุล : {follows.fullname}</label><br />
+                                <label className='fw-bold'>หมายเลขโทรศัพท์ : {follows.phone}</label><br />
+                                <label className='fw-bold'>ที่อยู่ : {follows.address}</label><br />
                             </div>
                         ))}
-                        <div>
-                            <button className='btn btn-info text-white float-end'>ประวัติ</button>
-                        </div>
-                        <div>
-                            <button className='btn btn-primary float-end me-2' onClick={getData}>ดูรายละเอียด</button>
-                        </div>
+                        <button className='btn btn-info text-white btn-sm float-end mt-2'>ประวัติ</button>
+                        <button className='btn btn-primary btn-sm float-end me-2 mt-2' onClick={getData}>ดูรายละเอียด</button>
                     </div>
                 </div>
             </div>
@@ -57,14 +53,14 @@ function Follow() {
                             <div className='card-header bg-primary text-white fw-bold'>รายละเอียด</div>
                             <div className='card-body'>
                                 <div key={items.sale_id}>
-                                    <label className='fw-bold'>ชื่อ - นามสกุล : <strong>{items.fullname}</strong></label><br />
-                                    <label className='fw-bold'>หมายเลขโทรศัพท์ : <strong>{items.phone}</strong></label><br />
-                                    <label className='fw-bold'>ที่อยู่ : <strong>{items.address}</strong></label><br />
-                                    <label className='fw-bold'>ชื่อรถ : <strong>{items.prd_name}</strong></label><br />
-                                    <label className='fw-bold'>วันที่ : <strong>{items.sale_date}</strong></label><br />
-                                    <label className='fw-bold'>ราคา : <strong>{items.total_price}</strong></label><br />
-                                    <label className='fw-bold'>สถานะ : <strong>{items.status}</strong></label><br />
-                                    <label className='fw-bold'>หมายเหตุ : <strong>{items.remark}</strong></label><br />
+                                    <label className='fw-bold'>ชื่อ - นามสกุล : {items.fullname}</label><br />
+                                    <label className='fw-bold'>หมายเลขโทรศัพท์ : {items.phone}</label><br />
+                                    <label className='fw-bold'>ที่อยู่ : {items.address}</label><br />
+                                    <label className='fw-bold'>ชื่อรถ : {items.prd_name}</label><br />
+                                    <label className='fw-bold'>วันที่ : {items.sale_date}</label><br />
+                                    <label className='fw-bold'>ราคา : {items.total_price}</label><br />
+                                    <label className='fw-bold'>สถานะ : {items.status}</label><br />
+                                    <label className='fw-bold'>หมายเหตุ : {items.remark}</label><br />
                                 </div>
                             </div>
                         </div>
