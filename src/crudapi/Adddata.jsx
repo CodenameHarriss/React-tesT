@@ -28,7 +28,7 @@ function Adddata() {
             email: newUser.email,
             password: newUser.password
         }
-        axios.post('http://localhost:3001/user//create', data)
+        axios.post('http://localhost:3001/user//create', data)  //http://localhost:3001/user//create (localhost)
             .then((res) => {
                 console.log(res.data)
                 alert("เพิ่มข้อมูลสำเร็จ")

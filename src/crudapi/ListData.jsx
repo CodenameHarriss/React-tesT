@@ -21,7 +21,7 @@ function ListData() {
 
         if (confirmdelete) {
 
-            axios.delete(`http://localhost:3001/user/delete/${id}`)
+            axios.delete(`http://localhost:3001/user/delete/${id}`)  //http://localhost:3001/user/delete/${id} (localhost)
                 .then((res) => {
                     console.log(res)
                     alert("ลบข้อมูลสำเร็จ")

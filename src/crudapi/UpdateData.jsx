@@ -41,7 +41,7 @@ function UpdateData() {
 
         if (confirmupdate) {
 
-            axios.put(`http://localhost:3001/user/update/${id}`, upUser)
+            axios.put(`http://localhost:3001/user/update/${id}`, upUser)  //http://localhost:3001/user/update/${id} (localhost)
                 .then((res) => {
                     console.log(res);
                     alert("แก้ไขข้อมูลเรียบร้อย")
