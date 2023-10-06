@@ -59,7 +59,7 @@ function ListData() {
                                         <td>{users.phone}</td>
                                         <td>{users.address}</td>
                                         <td>
-                                            <Link to={`/UpdateData/${users.id}`} className='btn btn-warning me-2 btn-sm mt-1'>แก้ไข</Link>
+                                            <Link to={`/UpdateData/${users.id}`} className='btn btn-warning text-white me-2 btn-sm mt-1'>แก้ไข</Link>
                                             <button type='button' onClick={() => handleDelete(users.id)} className='btn btn-danger me-2 btn-sm mt-1'>ลบ</button>
                                         </td>
                                     </tr>
