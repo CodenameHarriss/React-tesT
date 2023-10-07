@@ -60,15 +60,33 @@ function UpdateProfile() {
                         <div className='row g-2'>
                             <div className='col-md-6'>
                                 <label className='fw-bold'>ชื่อ-นามสกุล :</label>
-                                <input type="text" className="form-control" name='fullname' placeholder="ชื่อ-นามสกุล" value={user.fullname} onChange={handleUpdateChange} />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    name='fullname'
+                                    placeholder="ชื่อ-นามสกุล"
+                                    value={user.fullname}
+                                    onChange={handleUpdateChange} />
                             </div>
                             <div className='col-md-6'>
                                 <label className='fw-bold'>หมายเลขโทรศัพท์ :</label>
-                                <input type="number" className="form-control" name='phone' placeholder="หมายเลขโทรศัพท์" value={user.phone} onChange={handleUpdateChange} />
+                                <input
+                                    type="number"
+                                    className="form-control"
+                                    name='phone'
+                                    placeholder="หมายเลขโทรศัพท์"
+                                    value={user.phone}
+                                    onChange={handleUpdateChange} />
                             </div>
                             <div className='col-md-12'>
                                 <label className='fw-bold'>ที่อยู่ :</label>
-                                <input type="text" className="form-control" name='address' placeholder="ที่อยู่" value={user.address} onChange={handleUpdateChange} />
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    name='address'
+                                    placeholder="ที่อยู่"
+                                    value={user.address}
+                                    onChange={handleUpdateChange} />
                             </div>
                             <div className='float-start'>
                                 <button className='btn btn-warning btn-sm text-white me-2'>แก้ไขข้อมูล</button>

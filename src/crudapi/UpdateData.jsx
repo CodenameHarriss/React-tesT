@@ -61,31 +61,61 @@ function UpdateData() {
                 <div className='row g-2'>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="text" className="form-control" name='fullname' placeholder="ชื่อ-นามสกุล" value={upUser.fullname} onChange={handleInputChange} />
+                            <input
+                                type="text"
+                                className="form-control"
+                                name='fullname'
+                                placeholder="ชื่อ-นามสกุล"
+                                value={upUser.fullname}
+                                onChange={handleInputChange} />
                             <label>ชื่อ-นามสกุล</label>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="number" className="form-control" name='phone' placeholder="หมายเลขโทรศัพท์" value={upUser.phone} onChange={handleInputChange} />
+                            <input
+                                type="number"
+                                className="form-control"
+                                name='phone'
+                                placeholder="หมายเลขโทรศัพท์"
+                                value={upUser.phone}
+                                onChange={handleInputChange} />
                             <label>หมายเลขโทรศัพท์</label>
                         </div>
                     </div>
                     <div className='col-md-12'>
                         <div className="form-floating">
-                            <input type="text" className="form-control" name='address' placeholder="ที่อยู่" value={upUser.address} onChange={handleInputChange} />
+                            <input
+                                type="text"
+                                className="form-control"
+                                name='address'
+                                placeholder="ที่อยู่"
+                                value={upUser.address}
+                                onChange={handleInputChange} />
                             <label>ที่อยู่</label>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="email" className="form-control" name='email' placeholder="Email" value={upUser.email} onChange={handleInputChange} />
+                            <input
+                                type="email"
+                                className="form-control"
+                                name='email'
+                                placeholder="Email"
+                                value={upUser.email}
+                                onChange={handleInputChange} />
                             <label>Email</label>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="password" className="form-control" name='password' placeholder="password" value={upUser.password} onChange={handleInputChange} />
+                            <input
+                                type="password"
+                                className="form-control"
+                                name='password'
+                                placeholder="password"
+                                value={upUser.password}
+                                onChange={handleInputChange} />
                             <label>password</label>
                         </div>
                     </div>

@@ -47,31 +47,56 @@ function Adddata() {
                 <div className='row g-2'>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="text" className="form-control" name='fullname' placeholder="ชื่อ-นามสกุล" onChange={e => setNewUser({ ...newUser, fullname: e.target.value })} />
+                            <input
+                                type="text"
+                                className="form-control"
+                                name='fullname'
+                                placeholder="ชื่อ-นามสกุล"
+                                onChange={e => setNewUser({ ...newUser, fullname: e.target.value })} />
                             <label>ชื่อ-นามสกุล</label>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="number" className="form-control" name='phone' placeholder="หมายเลขโทรศัพท์" onChange={e => setNewUser({ ...newUser, phone: e.target.value })} />
+                            <input
+                                type="number"
+                                className="form-control"
+                                name='phone'
+                                placeholder="หมายเลขโทรศัพท์"
+                                onChange={e => setNewUser({ ...newUser, phone: e.target.value })} />
                             <label>หมายเลขโทรศัพท์</label>
                         </div>
                     </div>
                     <div className='col-md-12'>
                         <div className="form-floating">
-                            <input type="text" className="form-control" name='address' placeholder="ที่อยู่" onChange={e => setNewUser({ ...newUser, address: e.target.value })} />
+                            <input
+                                type="text"
+                                className="form-control"
+                                name='address'
+                                placeholder="ที่อยู่"
+                                onChange={e => setNewUser({ ...newUser, address: e.target.value })} />
                             <label>ที่อยู่</label>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="email" className="form-control" name='email' placeholder="Email" onChange={e => setNewUser({ ...newUser, email: e.target.value })} />
+                            <input
+                                type="email"
+                                className="form-control"
+                                name='email'
+                                placeholder="Email"
+                                onChange={e => setNewUser({ ...newUser, email: e.target.value })} />
                             <label>Email</label>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="form-floating">
-                            <input type="password" className="form-control" name='password' placeholder="password" onChange={e => setNewUser({ ...newUser, password: e.target.value })} />
+                            <input
+                                type="password"
+                                className="form-control"
+                                name='password'
+                                placeholder="password"
+                                onChange={e => setNewUser({ ...newUser, password: e.target.value })} />
                             <label>password</label>
                         </div>
                     </div>
