@@ -35,9 +35,9 @@ function Follow() {
                     <div className='card-body'>
                         {follow.map((follows) => (
                             <div key={follows.sale_id}>
-                                <label className='fw-bold'>ชื่อ - นามสกุล : {follows.fullname}</label><br />
-                                <label className='fw-bold'>หมายเลขโทรศัพท์ : {follows.phone}</label><br />
-                                <label className='fw-bold'>ที่อยู่ : {follows.address}</label><br />
+                                <label className='fw-bold'>ชื่อ - นามสกุล :<br /> {follows.fullname}</label><br />
+                                <label className='fw-bold'>หมายเลขโทรศัพท์ :<br /> {follows.phone}</label><br />
+                                <label className='fw-bold'>ที่อยู่ :<br /> {follows.address}</label><br />
                             </div>
                         ))}
                         <button className='btn btn-info text-white btn-sm float-end mt-2'>ประวัติ</button>
@@ -53,14 +53,14 @@ function Follow() {
                             <div className='card-header bg-primary text-white fw-bold'>รายละเอียด</div>
                             <div className='card-body'>
                                 <div key={items.sale_id}>
-                                    <label className='fw-bold'>ชื่อ - นามสกุล : {items.fullname}</label><br />
-                                    <label className='fw-bold'>หมายเลขโทรศัพท์ : {items.phone}</label><br />
-                                    <label className='fw-bold'>ที่อยู่ : {items.address}</label><br />
-                                    <label className='fw-bold'>ชื่อรถ : {items.prd_name}</label><br />
-                                    <label className='fw-bold'>วันที่ : {items.sale_date}</label><br />
-                                    <label className='fw-bold'>ราคา : {items.total_price}</label><br />
-                                    <label className='fw-bold'>สถานะ : {items.status}</label><br />
-                                    <label className='fw-bold'>หมายเหตุ : {items.remark}</label><br />
+                                    <label className='fw-bold mt-2'>ชื่อ - นามสกุล : {items.fullname}</label><br />
+                                    <label className='fw-bold mt-2'>หมายเลขโทรศัพท์ : {items.phone}</label><br />
+                                    <label className='fw-bold mt-2'>ที่อยู่ : {items.address}</label><br />
+                                    <label className='fw-bold mt-2'>ชื่อรุ่นรถ : {items.prd_name}</label><br />
+                                    <label className='fw-bold mt-2'>วันที่ : {items.sale_date}</label><br />
+                                    <label className='fw-bold mt-2'>ราคา : {items.total_price}</label><br />
+                                    <label className='fw-bold mt-2'>สถานะ : {items.status}</label><br />
+                                    <label className='fw-bold mt-2'>หมายเหตุ : {items.remark}</label><br />
                                 </div>
                             </div>
                         </div>
