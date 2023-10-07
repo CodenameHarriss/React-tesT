@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 function ProfileUser() {
 
     const [user, setUser] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/user/read/4`)
+        axios.get(`http://localhost:3001/user/read/1`)
             .then((res) => {
                 setUser(res.data)
             })
@@ -28,11 +29,11 @@ function ProfileUser() {
                             <p><strong>{users.phone}</strong></p>
                             <label className='fw-bold'>ที่อยู่ :</label>
                             <p><strong>{users.address}</strong></p>
-                            <label className='fw-bold'>Email :</label>
-                            <p><strong>{users.email}</strong></p>
+                            <div>
+                                <Link to={`/UpdateProfile/${users.id}`} className='btn btn-warning btn-sm text-white'>แก้ไขข้อมูล</Link>
+                            </div>
                         </div>
                     ))}
-                    <button className='btn btn-warning btn-sm text-white'>แก้ไขข้อมูล</button>
                 </div>
             </div>
         </div>
