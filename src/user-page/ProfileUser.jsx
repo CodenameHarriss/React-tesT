@@ -7,7 +7,7 @@ function ProfileUser() {
     const [user, setUser] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/user/read/1`)
+        axios.get(`http://127.0.0.1:3001/user/read/1`)
             .then((res) => {
                 setUser(res.data)
             })

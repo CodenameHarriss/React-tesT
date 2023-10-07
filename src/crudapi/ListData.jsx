@@ -7,7 +7,7 @@ function ListData() {
     const [user, setUser] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/user/read`)  //http://localhost:3001/user/read (localhost)
+        axios.get(`http://127.0.0.1:3001/user/read`)  //http://localhost:3001/user/read (localhost)
             .then((res) => {
                 setUser(res.data)
             }).catch((error) => {
@@ -21,7 +21,7 @@ function ListData() {
 
         if (confirmdelete) {
 
-            axios.delete(`http://localhost:3001/user/delete/${id}`)  //http://localhost:3001/user/delete/${id} (localhost)
+            axios.delete(`http://127.0.0.1:3001/user/delete/${id}`)  //http://localhost:3001/user/delete/${id} (localhost)
                 .then((res) => {
                     console.log(res)
                     alert("ลบข้อมูลสำเร็จ")

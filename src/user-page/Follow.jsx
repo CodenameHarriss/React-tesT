@@ -6,7 +6,7 @@ function Follow() {
     const [follow, setFollow] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/sale/read/1`)
+        axios.get(`http://127.0.0.1:3001/sale/read/1`)
             .then((res) => {
                 setFollow(res.data)
             })
@@ -18,7 +18,7 @@ function Follow() {
     const [data, setData] = useState([]);
 
     const getData = () => {
-        axios.get(`http://localhost:3001/sale/read/1`)
+        axios.get(`http://127.0.0.1:3001/sale/read/1`)
             .then((res) => {
                 setData(res.data)
             })

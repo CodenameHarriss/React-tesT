@@ -8,7 +8,7 @@ function UpdateData() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/user/read/${id}`)
+        axios.get(`http://127.0.0.1:3001/user/read/${id}`)
             .then(res => {
                 // console.log(res.data)
                 setUpUser(res.data[0])
@@ -41,7 +41,7 @@ function UpdateData() {
 
         if (confirmupdate) {
 
-            axios.put(`http://localhost:3001/user/update/${id}`, upUser)  //http://localhost:3001/user/update/${id} (localhost)
+            axios.put(`http://127.0.0.1:3001/user/update/${id}`, upUser)  //http://localhost:3001/user/update/${id} (localhost)
                 .then((res) => {
                     console.log(res);
                     alert("แก้ไขข้อมูลเรียบร้อย")

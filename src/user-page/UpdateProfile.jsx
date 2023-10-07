@@ -14,7 +14,7 @@ function UpdateProfile() {
     })
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/user/read/${id}`)
+        axios.get(`http://127.0.0.1:3001/user/read/${id}`)
             .then(res => {
                 setUser(res.data[0])
             })
@@ -38,7 +38,7 @@ function UpdateProfile() {
 
         if (confirmupdate) {
 
-            axios.put(`http://localhost:3001/user/update/${id}`, user)  //http://localhost:3001/user/update/${id} (localhost)
+            axios.put(`http://127.0.0.1:3001/user/update/${id}`, user)  //http://localhost:3001/user/update/${id} (localhost)
                 .then((res) => {
                     console.log(res);
                     alert("แก้ไขข้อมูลเรียบร้อย")
