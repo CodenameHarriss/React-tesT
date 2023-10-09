@@ -15,6 +15,7 @@ import ProfileUser from './user-page/ProfileUser'
 import Follow from './user-page/Follow'
 import UpdateProfile from './user-page/UpdateProfile'
 import MyComponent from './test/MyComponent'
+import MyForm from './test/MyForm'
 
 function App() {
   return (
@@ -35,7 +36,8 @@ function App() {
         <Route path='UpdateProfile/:id' element={<UpdateProfile />}></Route>
         <Route path='Follow' element={<Follow />}></Route>
         //test
-        <Route path='MyComponent' element={<MyComponent/>}></Route>
+        <Route path='MyComponent' element={<MyComponent />}></Route>
+        <Route path='MyForm' element={<MyForm />}></Route>
       </Routes>
     </BrowserRouter>
   )

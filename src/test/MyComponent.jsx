@@ -7,15 +7,15 @@ function MyComponent() {
     const [fullname, setFullname] = useState('')
     const maxlengthName = 200
 
-    const handleInputChangePhone = (event) => {
-        const inputText = event.target.value
+    const handleInputChangePhone = (e) => {
+        const inputText = e.target.value
         if (/^\d*$/.test(inputText) && inputText.length <= maxLengthphon) {
             setPhoneNumber(inputText)
         }
     }
 
-    const handleInputChangeName = (event) => {
-        const inputText = event.target.value
+    const handleInputChangeName = (e) => {
+        const inputText = e.target.value
         if (inputText.length <= maxlengthName) {
             setFullname(inputText)
         }
@@ -28,7 +28,7 @@ function MyComponent() {
                 <div className='card-body'>
                     <label className='fw-bold'>ชื่อ-นามสกุล</label>
                     <input
-                        className='form-control border-success'
+                        className='form-control border-info'
                         type="text"
                         value={fullname}
                         onChange={handleInputChangeName}
@@ -37,7 +37,7 @@ function MyComponent() {
                     <br />
                     <label className='fw-bold'>หมายเลขโทรศัพท์ :</label>
                     <input
-                        className='form-control border-success'
+                        className='form-control border-info'
                         type="text"
                         value={phoneNumber}
                         onChange={handleInputChangePhone}
