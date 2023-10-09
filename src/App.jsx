@@ -13,9 +13,11 @@ import UpdateData from './crudapi/UpdateData'
 import HomeUser from './user-page/HomeUser'
 import ProfileUser from './user-page/ProfileUser'
 import Follow from './user-page/Follow'
+import History from './user-page/History'
 import UpdateProfile from './user-page/UpdateProfile'
 import MyComponent from './test/MyComponent'
 import MyForm from './test/MyForm'
+import Detail from './user-page/Detail'
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
         <Route path='ProfileUser' element={<ProfileUser />}></Route>
         <Route path='UpdateProfile/:id' element={<UpdateProfile />}></Route>
         <Route path='Follow' element={<Follow />}></Route>
+        <Route path='Detail' element={<Detail />}></Route>
+        <Route path='History' element={<History />}></Route>
         //test
         <Route path='MyComponent' element={<MyComponent />}></Route>
         <Route path='MyForm' element={<MyForm />}></Route>

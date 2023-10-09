@@ -89,7 +89,7 @@ function UpdateProfile() {
                                     onChange={handleUpdateChange} />
                             </div>
                             <div className='float-start'>
-                                <button className='btn btn-warning btn-sm text-white me-2'>แก้ไขข้อมูล</button>
+                                <button className='btn btn-success btn-sm text-white me-2'>แก้ไขข้อมูล</button>
                                 <Link className='btn btn-danger btn-sm' to={"/ProfileUser"}>ย้อนกลับ</Link>
                             </div>
                         </div>
