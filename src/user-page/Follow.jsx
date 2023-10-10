@@ -21,10 +21,12 @@ function Follow() {
 
     const toggleDetail = () => {
         setShowDetail(!showDetail)
+        setShowHistory(false)
     }
 
     const toggleHistory = () => {
         setShowHistory(!showHistory)
+        setShowDetail(false)
     }
 
     return (
@@ -51,8 +53,8 @@ function Follow() {
                                 <br />
                             </div>
                         ))}
-                        <button className="btn btn-info text-white btn-sm float-end mt-2" onClick={toggleHistory}>ประวัติ</button>
-                        <button className="btn btn-primary btn-sm float-end me-2 mt-2" onClick={toggleDetail}>รายละเอียด</button>
+                        <button className="btn btn-info text-white btn-sm float-end mt-2" onClick={() => toggleHistory()} > {showHistory ? 'ปิดประวัติ' : 'แสดงประวัติ'}</button>
+                        <button className="btn btn-primary btn-sm float-end me-2 mt-2" onClick={() => toggleDetail()} > {showDetail ? 'ปิดรายละเอียด' : 'แสดงรายละเอียด'}</button>
                     </div>
                 </div>
             </div>
